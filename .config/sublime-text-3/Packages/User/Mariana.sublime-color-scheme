@@ -1,0 +1,94 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+    "variables":
+    {
+
+        "dark_bg": "#282828",
+        "medium_dark_bg": "#3c3836",
+        "medium_bg": "#282828",
+        "light_bg": "#282828",
+        "black": "#242a32",
+        "blue": "#83a598",
+        "blue3": "#2C323B",
+        "blue6": "#928374",
+        "blue-vibrant": "#73ba9f",
+        "green": "#98C379",
+        "orange": "#fe8019",
+        "red": "#d54e53",
+        "white": "#ddc7a1",
+        "white2": "#ffffff",
+        "white3": "#ddc7a1",
+        "pink": "#fe8019",     
+    },
+    "globals":
+    {
+        "foreground": "var(white3)",
+        "background": "var(blue3)",
+        "line_highlight": "var(blue2)",
+        "highlight": "var(blue3)",
+        "caret": "var(blue)",
+        "brackets_options": "foreground",
+        "bracket_contents_options": "foreground",
+        "bracket_contents_foreground": "var(orange)",
+    },
+    "rules":
+    [
+                {
+            "class": "panel_control",
+            "layer0.tint": "color(var(blue3))",
+            "layer0.opacity": 1.0,
+            "content_margin": 2
+        },
+        {
+            "class": "tabset_control",
+            "layer0.opacity": 1.0,
+            "content_margin": [0, 0, 0, 0],
+            "tab_height": 34,
+        },
+        {
+            "class": "tab_control",
+            "settings": {"file_tab_style": "angled"},
+            "attributes": ["file_dark"],
+            "tint_modifier": "var(background)",
+        },
+        {
+            "class": "quick_panel_label",
+            "font.size": 16,
+            "fg": "var(white)",
+            "match_fg": "var(green)",
+            "selected_fg": "var(green)",
+            "selected_match_fg": "white"
+        },
+        {
+            "class": "title_bar",
+            "settings": ["themed_title_bar"],
+            "bg":  "color(var(green))",
+            "fg": "color(var(green))",
+            "style": "system"
+        },
+        // Status Bar
+        {
+            "class": "status_bar",
+            "layer0.tint": "color(var(--background))",
+            "layer0.opacity": 1.0,
+            "layer1.texture": "Theme - Default/common/footer_divider.png",
+            "layer1.inner_margin": [0, 1, 0, 1],
+            "layer1.draw_center": false,
+            "layer1.opacity": 0.0,
+            "content_margin": [8, 0, 8, 0]
+        },    
+        {
+            "class": "title_bar",
+            "settings": ["themed_title_bar"],
+            "fg": "var(blue3)",
+            "style": "system"
+        },
+        {
+            "class": "title_bar",
+            "settings": ["themed_title_bar"],
+            "attributes": ["file_dark"],
+            "bg": "var(blue3)",
+            "style": "dark"
+        },
+    ]
+}
